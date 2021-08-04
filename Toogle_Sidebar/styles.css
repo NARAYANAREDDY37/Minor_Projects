@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar {
+	position: fixed;
+	width: 30%;
+	height: 100vh;
+	background: #242424;
+	left: -30%;
+	transition: all 0.7s ease-out;
+}
+
+#sidebar ul li {
+	color: white;
+	padding: 30px;
+	border-bottom: 1px solid #ccc;
+	font-size: 30px;
+	text-align: center;
+}
+
+.toggle-btn {
+	position: absolute;
+	left: 105%;
+	top: 15px;
+	cursor: pointer;
+}
+
+.toggle-btn span {
+	display: block;
+	background-color: black;
+	width: 30px;
+	height: 5px;
+	margin: 3px;
+}
+
+#sidebar.active {
+	left: 0;
+}
